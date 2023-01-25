@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Catering</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family:'Courier New', Courier, monospace}
+h1,h2,h3,h4,h5,h6 {font-family:serif; letter-spacing:5px}
+a :hover{
+    background-color:#E8B7A2;
+}
+a{
+    font-size: larger;
+}
+</style>
+<body>
+
+<!-- Navigation (Sits on top) -->
+
+<div  style="background-color:#E2A68B;">
+<div class="w3-top w3-bar  w3-padding w3-card w3-wide" style="background-color:#D17046 ;">
+<a href="#home" class="w3-bar-item w3-button w3-hover-pale-red">The Seafood House</a>
+
+<!-- Right-sided navbar links. Hide them on small screens -->
+<div class="w3-right w3-hide-small">
+<a href="index.html" class="w3-bar-item w3-button w3-hover-pale-red">About</a>
+<a href="Menu.html" class="w3-bar-item w3-button w3-hover-pale-red">Menu</a>
+<a href="contact.html" class="w3-bar-item w3-button w3-hover-pale-red">Contact</a>
+</div>
+</div>
+
+<!-- Start Content -->
+<div id="home" class="w3-content">
+
+<!-- Image in Display Container -->
+
+<div class="w3-padding-top-48">
+<div class="w3-display-container ">
+<img class="mySlides"src="images/padthai.jpg" alt="Catering" 
+style="width:100%">
+<img class="mySlides"src="images/cake.png" style="width:100% ;">
+<img class="mySlides"src="images/slamon.png" style="width:100% ;">
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+    
+<div class="w3-display-bottomright w3-padding-small w3-opacity w3-hide-small w3-white">
+<h2>Only The Freshest</h2>
+</div>
+
+</div>
+</div>
+
+<!-- About -->
+<div id="about" class="w3-padding-top-64">
+<div class="w3-row">
+
+<div class="w3-half w3-padding-large w3-hide-small ">
+<img src="images/shrimps.jpg" class="w3-round " alt="Table" style="width:100%">
+</div>
+
+<div class="w3-half w3-padding-large w3-card-4">
+<h1 class="w3-center">About The Seafood House</h1><br>
+<h5 class="w3-center">Tradition since 1960</h5>
+<p class="w3-large">
+The seafood house is a small, family owned restaruant located in Massachussetts.  We've been in business for over 60 years.  We use only the freshest seafood caught in the last 24 hours.</p>
+<p class="w3-large w3-text-black w3-hide-medium">
+In the last year, we've relocated from Boston down to the cape.  This move has come with many nuances; However, the food has only gotten fresher and more authentic.  From the tables you can see straight past the beach into the sea.
+</p>
+</div>
+
+</div>
+</div>
+
+<!-- End Content -->
+</div>
+<div class="w3-container w3-center" style="background-color:#D17046 ;">
+   <h6>L McKay :: Web Design :: WHS 2023 </h6> 
+
+ 
+</div>
+
+</div>
+
+</body>
+</html> 
